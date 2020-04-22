@@ -1,0 +1,92 @@
+body {
+  height: 100%;
+  position: relative;
+}
+
+/*Main containere*/
+#mainContainer {
+  padding-bottom: 100px;
+}
+
+main {
+  width: 100%;
+  height: 70px;
+  background-color: blue;
+}
+
+/*design for the page links HOME, GALLERY, WORKPAGE*/
+#navBarButton {
+  background-color: green;
+  margin-top: 15px;
+  width: 15%;
+  height: 40px;
+}
+/**/
+#navBarLink {
+  background-color: red;
+  float: right;
+  margin-top: 25px;
+  width: 10%;
+  /*padding: 10px;*/
+  border-radius: 50%;
+  /*  overflow: auto;*/
+}
+/*---------------------------------------------------------*/
+.container {
+  margin: auto;
+  width: 80%;
+  height: 800px;
+  border: 2px solid gray;
+  border-style: dashed;
+  overflow: auto;
+}
+/*Grid speccs, creating the 2x2 grid of squares and centering them accordingly*/
+.grid {
+  margin: 50px auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: repeat(2, 300px);
+  grid-gap: 5px;
+}
+/*box specs and centering all content within*/
+.box {
+  border: 2px solid #696969;
+}
+
+/*Images in each box will be the same size and centered*/
+div.box img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/*Each paragraph will be centered under the pictures*/
+div.box p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-size: 50%;
+}
+
+/*---------------------------------------------------------*/
+footer {
+  width: 100%;
+  bottom: 0;
+  height: 100px;
+  background-color: rgb(41, 40, 38);
+  position: absolute;
+
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footerLink {
+  background-color: rgb(0, 68, 255);
+}
+#contactInfo {
+  color: white;
+}
