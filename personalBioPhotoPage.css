@@ -1,6 +1,7 @@
 body {
   height: 100%;
   position: relative;
+  background-color: rgb(146, 154, 171);
 }
 
 /*Main containere*/
@@ -10,47 +11,119 @@ body {
 
 main {
   width: 100%;
-  height: 70px;
-  background-color: blue;
+  height: 80px;
+  background-color: rgb(211, 213, 253);
+  overflow: hidden;
+  /*display: auto;*/
+  /*overflow: hidden;*/
 }
 
 /*design for the page links HOME, GALLERY, WORKPAGE*/
-#navBarButton {
-  background-color: green;
-  margin-top: 15px;
-  width: 15%;
-  height: 40px;
+
+ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
 }
-/**/
+ul li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 24px;
+}
+ul li a {
+  color: black;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-style: oblique;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+li a:hover {
+  background-color: rgb(71, 74, 86);
+  color: white;
+}
+/*design for The social Media links*/
+
 #navBarLink {
-  background-color: red;
   float: right;
-  margin-top: 25px;
-  width: 10%;
-  /*padding: 10px;*/
-  border-radius: 50%;
-  /*  overflow: auto;*/
+  margin: 2%;
+  margin-top: 22px;
+  cursor: pointer;
+}
+.fa {
+  padding: 10px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-github {
+  padding: 7px;
+  color: white;
+  background: black;
+}
+.fa-envelope {
+  padding: 8px;
+  background: gray;
+  cursor: pointer;
 }
 /*---------------------------------------------------------*/
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto;
   grid-template-rows: auto auto;
-  background-color: #2196f3;
+  background-color: rgb(146, 154, 171);
   overflow: hidden;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(146, 154, 171);
   text-align: center;
   font-size: 30px;
 }
 /*---------------------------------------------------------*/
-.galleryContainer {
+
+.galleryContainer1 {
   margin: auto;
   width: 70%;
-  border: 2px solid gray;
+  border: 2px solid white;
   overflow: auto;
+}
+.galleryContainer2 {
+  margin: auto;
+  width: 70%;
+  border: 2px solid white;
+  overflow: auto;
+}
+.galleryContainer1 p {
+  font-family: sans-serif;
+  margin-left: 30px;
+}
+.galleryContainer2 p {
+  font-family: sans-serif;
+  margin-right: 30px;
+}
+.photoParagraph2 {
+  margin-left: 55%;
 }
 .rightPhoto {
   float: right;
@@ -62,15 +135,16 @@ main {
   float: left;
   width: 50%;
   border: 1px dotted black;
-  margin: 0px 0px 15px 20px;
+  margin: 0px 0px 15px 0px;
 }
+
+/*sytle for my footer*/
 footer {
   width: 100%;
   bottom: 0;
   height: 100px;
-  background-color: rgb(41, 40, 38);
+  background-color: rgb(71, 74, 86);
   position: absolute;
-
   bottom: 0;
   display: flex;
   align-items: center;
@@ -78,8 +152,20 @@ footer {
 }
 
 #footerLink {
-  background-color: rgb(0, 68, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footerLink button {
+  background: rgb(211, 213, 253);
+
+  cursor: pointer;
+  margin-right: 10px;
 }
 #contactInfo {
   color: white;
+}
+#contactInfo a {
+  color: white;
+  text-decoration: none;
 }
