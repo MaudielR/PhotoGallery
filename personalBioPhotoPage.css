@@ -87,6 +87,9 @@ li a:hover {
   cursor: pointer;
 }
 /*---------------------------------------------------------*/
+#boxPic {
+  width: 100%;
+}
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto;
